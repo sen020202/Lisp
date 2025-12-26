@@ -1,0 +1,18 @@
+(defun c:pj (/ ss1)
+  (setq varlist (list "cmdecho" "peditaccept")
+        oldvars (mapcar 'getvar varlist))
+  (mapcar 'setvar varlist (list 0 1))
+  (setq ss1 (ssget '((-4 . "<OR") (0 . "LINE") (-4 . "OR>"))))
+  (if (> (sslength ss1) 1)
+      (progn
+        (vl-cmdf "_pedit" "_M" ss1 "" "J" "0" "")
+        (princ (strcat "\n" (itoa (sslength ss1)) " Lines Converted. "))
+      )
+      (progn
+        (vl-cmdf "_pedit" ss1 "")
+        (princ (strcat "\n" (itoa (sslength ss1)) " Line Converted. "))
+      )
+  )
+  (mapcar 'setvar varlist oldvars)
+  (princ)
+)
