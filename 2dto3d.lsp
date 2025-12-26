@@ -1,0 +1,18 @@
+(defun c:2dto3d (/ ss1)
+  (setq varlist (list "cmdecho" "peditaccept")
+        oldvars (mapcar 'getvar varlist))
+  (mapcar 'setvar varlist (list 0 1))
+  (setq ss1 (ssget '((-4 . "<OR") (0 . "LWPOLYLINE") (-4 . "OR>"))))
+  (if (> (sslength ss1) 1)
+      (progn
+        (vl-cmdf "_pedit" "_M" ss1 "" "J" "0" "")
+        (princ (strcat "\n" (itoa (sslength ss1)) " 2D Polylines Converted to 3D. "))
+      )
+      (progn
+        (vl-cmdf "_pedit" ss1 "")
+        (princ (strcat "\n" (itoa (sslength ss1)) " 2D Polyline Converted to 3D. "))
+      )
+  )
+  (mapcar 'setvar varlist oldvars)
+  (princ)
+)
