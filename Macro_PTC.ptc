@@ -1,0 +1,210 @@
+0	0	Never classified	0
+*	Zero length line	1	128,0,255	1
+
+1	1	Default	0
+*	Zero length line	19	0,0,255	0
+
+2	2	Ground	0
+*	Zero length line	2	255,255,255	3
+
+3	3	Low.vegetation	0
+*	Zero length line	3	0,128,0	1
+
+4	4	Med.vegetation	0
+*	Zero length line	4	0,255,128	1
+
+5	5	Hig.vegetation	0
+*	Zero length line	5	0,255,0	1
+
+6	6	Buildings	0
+*	Zero length line	6	255,0,0	3
+
+7	7	Low Points	0
+*	Zero length line	7	255,0,255	6
+
+8	8	Others	0
+*	Zero length line	8	255,128,255	3
+
+9	9	water	0
+*	Zero length line	9	128,255,255	0
+
+10	10	Rail Road	0
+*	Zero length line	104	0,255,0	3
+
+11	11	Road Surface	0
+*	Zero length line	104	0,255,255	2
+
+12	12	overlap	0
+*	Zero length line	104	255,128,255	0
+
+13	13	Wire-Gaurd (Shield)	0
+*	Zero length line	104	0,255,255	3
+
+14	14	Powerlines	0
+*	Zero length line	10	255,255,0	3
+
+15	15	Transmission Tower	0
+*	Zero length line	11	128,0,160	3
+
+16	16	Wire-Insulator	0
+*	Zero length line	13	255,255,255	3
+
+17	17	Bridge Deck	0
+*	Zero length line	12	128,0,64	0
+
+18	18	Outlier	0
+*	Zero length line	18	255,255,0	3
+
+19	19	Pole Street/Lamp	0
+*	Zero length line	104	128,0,160	2
+
+20	20	Non-Ground	0
+*	Zero length line	104	0,255,0	5
+
+21	21	Dam/Embankment	0
+*	Zero length line	104	0,254,160	0
+
+22	22	Wall/Fence	0
+*	Zero length line	104	255,0,0	0
+
+23	23	Snow	0
+*	Zero length line	104	255,255,255	0
+
+24	24	Below surface	0
+*	Zero length line	104	0,0,240	0
+
+25	25	Movable object	0
+*	Zero length line	25	195,195,195	1
+
+26	26	Echo	0
+*	Zero length line	26	0,240,240	0
+
+27	27	Intensity	0
+*	Zero length line	104	255,0,255	0
+
+28	28	Temp class	0
+*	Zero length line	106	255,255,0	0
+
+29	29	vehicle	0
+*	Zero length line	106	128,0,64	0
+
+30	30	Breaklines	0
+*	Zero length line	106	255,255,255	0
+
+31	31	Synthetic points	0
+*	Zero length line	27	0,0,240	0
+
+32		road	0
+*	Zero length line	219	128,0,64	0
+
+33		Temp2	0
+*	Zero length line	219	255,128,192	0
+
+34	34	first_Echo	0
+*	Zero length line	34	0,0,255	1
+
+35	35	Last_Echo	0
+*	Zero length line	35	255,255,0	1
+
+38	38	Fence	0
+*	Zero length line	38	0,128,192	1
+
+39		Class 39	0
+*	Zero length line	39	255,255,255	1
+
+51	51	G_Roof	0
+*	Zero length line	19	255,0,0	0
+
+52	52	G_Roof_Str	0
+*	Zero length line	20	255,128,255	0
+
+53	53	G_Wall	0
+*	Zero length line	21	255,128,0	0
+
+54	54	G_Wall_str	0
+*	Zero length line	22	0,165,165	0
+
+55	55	G_Tree	0
+*	Zero length line	23	0,180,0	0
+
+56	56	G_Tree_Veg	0
+*	Zero length line	24	0,180,0	0
+
+57	57	G_Pole	0
+*	Zero length line	25	255,0,128	0
+
+58	58	G_Car	0
+*	Zero length line	26	255,0,0	0
+
+61		Class 61	0
+*	Zero length line	61	255,255,255	1
+
+64	64	Non-ground perennial	0
+*	Zero length line	64	128,128,255	1
+
+65	65	Noise high/low	0
+*	Zero length line	219	255,0,255	0
+
+66	66	bridge_synthetic_points	0
+*	Zero length line	219	255,255,0	0
+
+101		Urban_Area	0
+*	Zero length line	59	255,255,255	0
+
+102	102	Mountain_Area	0
+*	Zero length line	102	255,255,255	0
+
+103	103	Rural_Area	0
+*	Zero length line	103	255,255,255	0
+
+104	61	Hedge	0
+*	Zero length line	104	0,0,255	0
+
+129		Class 129	0
+*	Zero length line	129	255,255,255	1
+
+130		Class 130	0
+*	Zero length line	130	255,255,255	1
+
+135		Class 135	0
+*	Zero length line	135	255,255,255	1
+
+201	201	GT_Others	0
+*	Zero length line	105	255,255,255	0
+
+202	202	GT_Ground	0
+*	Zero length line	202	255,127,0	0
+
+203	203	GT_Vegetation	0
+*	Zero length line	203	0,255,0	0
+
+206	206	GT_Building	0
+*	Zero length line	204	255,128,64	3
+
+207	207	GT_Low_pt	0
+*	Zero length line	219	255,0,255	0
+
+209	209	GT_Water	0
+*	Zero length line	209	0,255,255	0
+
+217	217	GT_Bridge	0
+*	Zero length line	220	64,128,128	0
+
+218	218	GT_High.pt	0
+*	Zero length line	212	240,0,240	0
+
+S0		Class 256	0
+*	Zero length line	256	255,255,255	1
+
+W0		Class 1024	0
+*	Zero length line	1024	255,255,255	1
+
+O1	O1	Cross strip	0
+*	Zero length line	219	255,255,255	0
+
+O2		Class 2050	0
+*	Zero length line	2050	255,0,0	1
+
+O3		Class 2051	0
+*	Zero length line	2051	255,255,0	1
+
