@@ -1,0 +1,30 @@
+[TerraScan macro]
+Version=020.001
+Description=
+Author=
+ByLine=0
+ByScanner=0
+BatchCanRun=1
+AnotherComputerCanRun=1
+CanBeDistributed=1
+
+# Low_point
+FnScanClassifyShapes("2",202,0,22,0,0,0,0,0,0,0.000,0)
+FnScanClassifyBelow("202",7,0,2.00,0.10,0)
+FnScanClassifyShapes("1",201,0,22,0,0,0,0,0,0,0.000,0)
+FnScanClassifyHgtGrd(202,100.0,201,2,-0.100,0.100,0)
+FnScanClassifyClass("202",2,0)
+FnScanClassifyClass("201",1,0)
+# Add_ground
+FnScanClassifyShapes("1-5",56,0,21,0,0,0,0,0,0,1.000,1)
+FnScanClassifyEcho(56,57,3,0)
+FnScanClassifySurface("56",58,0.030,1,0)
+FnScanClassifyGround("56",2,"2",1,40.0,65.00,3.00,0.50,1,1.0,0,2.0,0,0,0)
+FnScanClassifyHgtLst("2,58",5.0,56,2,-0.080,0.080,0)
+FnScanClassifyClass("58",2,0)
+FnScanClassifyClass("56-57",1,0)
+# Remove_vegetation
+FnScanClassifyShapes("2",202,0,23,0,0,0,0,0,0,2.000,0)
+FnScanClassifyGround("202",2,"2",1,100.0,65.00,0.50,0.20,0,5.0,0,2.0,0,0,0)
+FnScanClassifyHgtGrd(202,100.0,202,2,-0.100,0.100,0)
+FnScanClassifyClass("202",1,0)
